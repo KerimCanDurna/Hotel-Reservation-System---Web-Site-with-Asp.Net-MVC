@@ -1,0 +1,88 @@
+﻿@using OtelMvcProje.Models.Entity
+@model List<Tbliletisim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_OtelVitrin.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<body>
+    <!--w3l-header-->
+    
+    <!-- //w3l-header -->
+    <section class="w3l-breadcrumb">
+        <div class="breadcrum-bg py-sm-5 py-4">
+            <div class="container py-lg-3">
+                <h2>İletişim</h2>
+                <p><a href="/Anasayfa/Index/">Ana Sayfa</a> &nbsp; / &nbsp; İletişim</p>
+            </div>
+        </div>
+    </section>
+    <!-- contact1 -->
+    @foreach (var x in Model)
+    {
+    <section class="w3l-contact-1 py-5">
+        <div class="contacts-9 py-lg-5 py-sm-4">
+            <div class="container">
+                <div class="d-grid contact-view">
+                    <div class="cont-details">
+                        <p>Bize ulaşmak çok kolay</p>
+                        <br />
+                        <h3 class="title-big">İletişim Bilgilerimiz</h3>
+                    </div>
+                    <div class="map-content-9">
+                        <p>
+                            @x.Aciklama
+                        </p>
+                    </div>
+                </div>
+                <div class="map-iframe my-5">
+                    <iframe src="@x.Koordinat"
+                            width="100%" height="300" frameborder="0" style="border: 0px; pointer-events: none;"
+                            allowfullscreen=""></iframe>
+                </div>
+                <div class="d-grid contact-view">
+                    <div class="cont-details">
+                        <div class="cont-top">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-phone text-primary"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>Telefon</h6>
+                                <p><a href="#">@x.Telefon</a></p>
+                            </div>
+                        </div>
+                        <div class="cont-top margin-up">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-envelope-o text-primary"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>Mail Adresimiz</h6>
+                                <p><a href="mailto:example@mail.com" class="mail">@x.Mail</a></p>
+                            </div>
+                        </div>
+                        <div class="cont-top margin-up">
+                            <div class="cont-left text-center">
+                                <span class="fa fa-map-marker text-primary"></span>
+                            </div>
+                            <div class="cont-right">
+                                <h6>Adresimiz</h6>
+                                <p>@x.Adres</p>
+                            </div>
+                        </div>
+                    </div>
+                    @Html.Action("MesajGonder","iletisim")
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /contact1 -->
+    }
+    </body>
+</html>

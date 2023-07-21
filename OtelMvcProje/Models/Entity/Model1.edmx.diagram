@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8535928767004856a60ec222fecc88df" Name="Diagram1">
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblHakkimda" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.Tbliletisim" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblMesaj" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblYeniKayit" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblMisafir" Width="1.5" PointX="5.375" PointY="1" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblRezervasyon" Width="1.5" PointX="7.625" PointY="1.25" />
+        <AssociationConnector Association="DbOtelYeniModel.FK_TblRezervasyon_TblMisafir" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblMesaj2" Width="1.5" PointX="5.375" PointY="5.75" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblOda" Width="1.5" PointX="0.75" PointY="7" />
+        <AssociationConnector Association="DbOtelYeniModel.FK_TblRezervasyon_TblOda" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblEkibimiz" Width="1.5" PointX="7.375" PointY="5.75" />
+        <EntityTypeShape EntityType="DbOtelYeniModel.TblOnRezervasyon" Width="1.5" PointX="3.375" PointY="8.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

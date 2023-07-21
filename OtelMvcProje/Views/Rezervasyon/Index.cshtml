@@ -1,0 +1,119 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Otel Rezervasyon Paneli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Error Page Widget Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href="~/hotels-starter/Rezervasyon/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/hotels-starter/Rezervasyon/css/bootstrap.css" rel='stylesheet' type='text/css' media="all">
+    <script src="~/hotels-starter/Rezervasyon/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/hotels-starter/Rezervasyon/js/move-top.js"></script>
+    <script type="text/javascript" src="~/hotels-starter/Rezervasyon/js/easing.js"></script>
+    <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Otel Rezervasyon Sayfası</h1>
+    </div>
+
+    <div class="banner-top">
+        <h2>Hemen Rezervasyonunu Yap!</h2>
+        <form method="post">
+            <div class="banner-bottom">
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Giriş Tarihi</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input type="date" name="GirisTarih" required="" class="form-control" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Çıkış Tarihi</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input type="date" name="CikisTarih" required="" class="form-control" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Kişi Sayısı</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input type="number" value="1" name="Kisi" class="form-control"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Ad Soyad</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input type="text" name="AdSoyad" class="form-control" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Telefon</p>
+                    </div>
+                    <div class="bnr-right">
+                        <input type="text" name="Telefon" class="form-control" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-one">
+                    <div class="bnr-left">
+                        <p>Açıklama</p>
+                    </div>
+                    <div class="bnr-right">
+                        <textarea name="Aciklama" rows="6" cols="38" class="form-control" ></textarea>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="bnr-btn">
+                    <input type="submit" value="Rezervasyon Yap">
+                </div>
+            </div>
+        </form>
+        <!---start-date-piker---->
+        <link rel="stylesheet" href="~/hotels-starter/Rezervasyon/css/jquery-ui.css" />
+        <script src="~/hotels-starter/Rezervasyon/js/jquery-ui.js"></script>
+        <script>
+				$(function() {
+				$( "#datepicker,#datepicker1" ).datepicker();
+				});
+        </script>
+        <!---/End-date-piker---->
+    </div>
+    <div class="footer">
+        <p>Copyright © Otel Rezervasyon Projesi | Tüm Hakları Saklıdır | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
+    </div>
+</body>
+</html>
